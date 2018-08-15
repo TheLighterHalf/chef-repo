@@ -19,7 +19,7 @@ nodes
 
 # ## OS junk files
 # [Tt]humbs.db
-# *.DS_Store
+*.DS_Store
 
 # ## Example of the workstation pattern.
 # !/cookbooks/chef_workstation/files/default/bundler/Gemfile
@@ -28,33 +28,33 @@ nodes
 # !cookbooks/chef_workstation
 
 # ##Chef
-# .kitchen/
-# .vagrant
+ .kitchen/
+ .vagrant
 # nodes
 # metadata.json
 
 # ##ruby
 # *.gem
 # Gemfile
-# Gemfile.lock
+ Gemfile.lock
 .rake_test_cache
 
 # ## Rails Heroku and other bits to ignore
-# *.log
+ *.log
 # *.sqlite3
 # db/*.sqlite3
-# .bundle
-# log/*
-# tmp/*
+ .bundle
+ log/*
+ tmp/*
 # public/system/*
 
 # ##nodejs
-# node_modules
+ node_modules
 
 # # Nuget (exclude all exes except for the one in the global build folder)
-# nuget.exe
-# !build/nuget/nuget.exe
-# *.nupkg
+ nuget.exe
+ !build/nuget/nuget.exe
+ *.nupkg
 # # NuGet packages (based on default naming convention)
 # [Bb]uild/[Pp]ackages/
 
@@ -63,8 +63,8 @@ nodes
 # output/
 
 # ## Probably not a good idea to be keeing VM inages in source control
-# *.vhd
-# *.vhdx
+ *.vhd
+ *.vhdx
 
 # ## Pester Test summary
 # Test.xml
@@ -99,7 +99,7 @@ nodes
 # *.bak
 # *.[Cc]ache
 # *.ilk
-# *.log
+ *.log
 # *.lib
 # *.sbr
 # *.schemaview
@@ -118,7 +118,7 @@ nodes
 # *ncrunch*
 
 # ##Subversion files
-# .svn
+ .svn
 
 # ## Office Temp Files
-# ~$*
+ ~$*
