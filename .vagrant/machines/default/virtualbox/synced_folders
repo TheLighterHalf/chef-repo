@@ -1,1 +1,0 @@
-{"virtualbox":{"/vagrant":{"nfs":true,"guestpath":"/vagrant","hostpath":"O:/chef-repo","disabled":false,"__vagrantfile":true},"v-csc-45d0e266e":{"id":"v-csc-45d0e266e","guestpath":"C:/vagrant-chef/5da64e9d7d31065f9dbfd86e2c49577e/cookbooks","hostpath":"O:/chef-repo/cookbooks","disabled":false,"__vagrantfile":true}}}

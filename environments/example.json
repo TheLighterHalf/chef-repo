@@ -1,6 +1,6 @@
 {
-    "name": "example",
-    "description": "This is an example environment defined as JSON",
+    "name": "localdev",
+    "description": "This is a local development environment defined as JSON",
     "chef_type": "environment",
     "json_class": "Chef::Environment",
     "default_attributes": {
