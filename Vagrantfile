@@ -1,5 +1,6 @@
 # rubocop:disable MutableConstant,EndOfLine
 VAGRANTFILE_API_VERSION = '2'
+VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('nodes', 'vagrant.json').read)
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'mwrock/Windows2016'
@@ -18,6 +19,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision :chef_solo do |chef|
-    chef.add_role 'example'
+    chef.cookbooks_path = ['cookbooks']
+    chef.roles_path = 'roles'
+    chef.data_bags_path = 'data_bags'
+    chef.json = VAGRANT_JSON
   end
 end
