@@ -1,3 +1,4 @@
+# rubocop:disable EndOfLine
 # frozen_string_literal: true
 name 'amc-secure-os'
 description 'AMC SecureOS Base Chef Managed Config'

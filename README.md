@@ -23,4 +23,5 @@ The config file, `.chef/knife.rb` is a repository specific configuration file fo
 
 ### Pre-Reqs
 
-*vagrant plugin install vagrant-omnibus
+- vagrant plugin install vagrant-cachier
+- vagrant plugin install vagrant-omnibus
