@@ -30,6 +30,7 @@ nodes
 # ##Chef
  .kitchen/
  .vagrant
+ .vagrant/
 # nodes
 # metadata.json
 
@@ -122,3 +123,4 @@ nodes
 
 # ## Office Temp Files
  ~$*
+.vagrant/machines/default/virtualbox/vagrant_cwd
