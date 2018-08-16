@@ -4,6 +4,33 @@ Every Chef installation needs a Chef Repository. This is the place where cookboo
 
 While we prefer Git, and make this repository available via GitHub, you are welcome to download a tar or zip archive and use your favorite version control system to manage the code.
 
+## Naming Standards
+
+Conforming to naming standards makes it easy to understand what you're looking at without digging right in. Please follow the following naming standards to ensure ease of use and portability.
+
+* Application Cookbooks - defines the entire application
+  * amc-app-api-platform
+  * amc-app-graphql
+  * amc-app-redis
+
+* Wrapper Cookbooks - wraps up a bunch of roles for ease of use
+  * amc-secure-os
+
+* Role Cookbooks - can be plugged in to anything
+  * amc-role-windows-server-2016
+  * amc-role-windows-server-2008-r2
+  * amc-role-centos-7
+  * amc-role-iis
+  * amc-role-zabbix-agent
+  * amc-role-splunk-forwarder
+  * amc-role-new-relic-agent
+
+* Recipes - Combine these to make a cookbook
+  * amc-rec-redis-install
+  * amc-rec-redis-configure
+  * amc-rec-iis-install
+  * amc-rec-iis-configure
+
 ## Repository Directories
 
 This repository contains several directories, and each directory contains a README file that describes what it is for in greater detail, and how to use it for managing your systems with Chef.
@@ -19,9 +46,6 @@ The config file, `.chef/knife.rb` is a repository specific configuration file fo
 
 <https://docs.chef.io/knife.html>
 
-## Next Steps
-
 ### Pre-Reqs
 
-- vagrant plugin install vagrant-cachier
 - vagrant plugin install vagrant-omnibus

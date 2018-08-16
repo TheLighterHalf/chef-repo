@@ -8,6 +8,5 @@
     "override_attributes": {
     },
     "cookbook_versions": {
-        "example": "= 1.0.0"
     }
 }
